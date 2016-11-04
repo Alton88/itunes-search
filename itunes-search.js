@@ -60,9 +60,8 @@ function displayResults(arg) {
 		html += '<source src="{0}" type="audio/mp4" /></td>'.replace("{0}", item.previewUrl);
 		html += '</tr>'
 		html += '<hr/>'
-		html += '</table>'	
+		html += '</table>'		
 	}
-				
 		html +='<nav aria-label="..." align="center">'
 		html +='<ul class="pagination">'
 		html +='<li class="page-item disabled">'
@@ -75,7 +74,7 @@ function displayResults(arg) {
 		html +='<li class=""><span class="page-link">2 <span class="sr-only"></span></span></li>'
 		html +='</ul>'
 		html +='</nav>'/**/
-
+		if(results.length === 0){html = '<h1 align="center">Artist Not Found</h1>';}		
         $('#itunes-results').html(html);
 
 }
