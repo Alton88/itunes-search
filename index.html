@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>iTunes Music Search</title>
+		<link rel="icon" href="musicIcon.jpg">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="music.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<script src="itunes-search.js"></script>
+    </head>
+
+    <body>
+	
+	<header>
+	
+		<div align="center">
+			<h1 style="background: rgba(76, 175, 80, 0.8)  " class="jumbotron">Welcome to the iTunes Music Search</h1>
+
+			<h3>Please enter the name of the artist</h3>
+			
+			<form id="search-form_3">			
+				<input type="text" class="search_3" id="search-keyword" autofocus onKeydown="if (event.keyCode===13) performSearch()">
+				<input type="button" class="submit_3" value="Find Artist" onclick="performSearch()" />
+			</form>		
+		</div>
+
+	</header>
+		
+			
+        <div id="itunes-results" align="left"></div>
+		
+
+		
+    </body>
+</html>
