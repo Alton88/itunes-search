@@ -25,9 +25,9 @@
 			font-size: 18px;
 		}
 
-		 div {
-			
-			//box-shadow: 10px 10px 5px #999999;
+		 #itunes-results {
+			margin-left:15%;
+			margin-right:15%;
 		}
 		
 		
@@ -136,43 +136,6 @@ background: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(8
 background: -moz-linear-gradient( center bottom, rgb(89,222,27) 0%, rgb(83,179,38) 15%, rgb(66,143,27) 80%, rgb(54,120,22) 100%);
 }
 		
-		
-// how many items per page
-itemsPerPage: 3,
 
-// item container selector
-itemsContainer: ".items",
-
-// item selector
-item: "> div",
-
-// initial page
-page: 1,
-
-// CSS selectors
-nextPage: ".nextPage",
-previousPage: ".previousPage", 
-firstPage: ".firstPage",
-lastPage: ".lastPage",
-pageNumbers: ".pageNumbers",
-currentPageClass: "active",
-pager: ".pager",
-
-// If set to an integer the maximum of visible pages in the .pageNumbers element is equal to this setting.
-maxPageNumbers: false,
-
-// auto hide if there is only one page.
-autoHidePager: true,
-
-// scroll to top
-scrollToTop: {
-  offset: 15,
-  speed: 100,
-},
-
-// enable history
-history: false,
-historyHashPrefix: "page-"		
-		
 		
 		

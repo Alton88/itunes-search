@@ -62,18 +62,7 @@ function displayResults(arg) {
 		html += '<hr/>'
 		html += '</table>'		
 	}
-		html +='<nav aria-label="..." align="center">'
-		html +='<ul class="pagination">'
-		html +='<li class="page-item disabled">'
-		html +='<span class="page-link" aria-label="Previous">'
-		html +='<span aria-hidden="true">&laquo;</span>'
-		html +='<span class="sr-only">Previous</span>'
-		html +='</span>'
-		html +='</li>'
-		html +='<li class="page-item active"><span class="page-link">1 <span class="sr-only">(current)</span></span></li>'
-		html +='<li class=""><span class="page-link">2 <span class="sr-only"></span></span></li>'
-		html +='</ul>'
-		html +='</nav>'/**/
+
 		if(results.length === 0){html = '<h1 align="center">Artist Not Found</h1>';}		
         $('#itunes-results').html(html);
 

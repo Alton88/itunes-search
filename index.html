@@ -22,17 +22,14 @@
 			<h3>Please enter the name of the artist</h3>
 			
 			<form id="search-form_3">			
-				<input type="text" class="search_3" id="search-keyword" autofocus onKeydown="if (event.keyCode===13) performSearch()">
+				<input type="text" class="search_3" id="search-keyword" autofocus onKeydown="if (event.keyCode===13) {event.preventDefault(); performSearch();} ">
 				<input type="button" class="submit_3" value="Find Artist" onclick="performSearch()" />
 			</form>		
 		</div>
 
 	</header>
 		
-			
-        <div id="itunes-results" align="left"></div>
-		
-
-		
+        <div id="itunes-results"></div>
+	
     </body>
 </html>
